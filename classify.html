@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>我的购物车</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    	<meta name="apple-mobile-web-app-capable" content="yes">
+    	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    	<meta name="format-detection" content="telephone=no">
+    	<link rel="stylesheet" href="css/weui/jquery-weui.min.css">
+    	<link rel="stylesheet" href="css/weui/weui.min.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/base.css">
+	</head>
+	<body style="background:#e6e6e6;">
+		<div class="global-layout nav-interval">
+			<!--顶部功能条-->
+			<header>
+				<div class="red-top-bar">
+					<div class="top-bar-nav">
+						<a href="javascript:;" class="backToPrev"></a>
+						<div class="title">分类</div>
+					</div>
+				</div>
+			</header>
+			<!--顶部功能条-->
+
+			<div class="contentBox">
+				<div class="classifyBox">
+					<div class="leftBar">
+						<ul class="classifyList">
+							<li class="item">热门推荐</li>
+							<li class="item cur">水果蔬菜</li>
+							<li class="item">休闲零食</li>
+							<li class="item">酒水饮料</li>
+							<li class="item">肉禽蛋奶</li>
+							<li class="item">蛋糕甜品</li>
+							<li class="item">冷热素食</li>
+							<li class="item">生活用品</li>
+							<li class="item">粮油调味</li>
+							<li class="item">医药健康</li>
+						</ul>
+					</div>
+					<div class="rightBar">
+						<div class="classifyContent">
+							<div class="classifyItem">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--底部悬浮导航-->
+			<div class="suspension-footer">
+				<div class="sf-item">
+					<a href="javascript:;" class="sfi-icon-1">主页</a>
+				</div>
+				<div class="sf-item">
+					<a href="javascript:;" class="sfi-icon-2">分类</a>
+				</div>
+				<div class="sf-item">
+					<i class="sfi-num">3</i>
+					<a href="javascript:;" class="sfi-icon-3">购物车</a>
+				</div>
+				<div class="sf-item">
+					<a href="javascript:;" class="sfi-icon-4">订单</a>
+				</div>
+				<div class="sf-item">
+					<a href="javascript:;" class="sfi-icon-5">我的</a>
+				</div>
+			</div>
+			<!--底部悬浮导航-->
+			
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/weui/jquery-weui.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script src="js/interact.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$(".classifyList li").click(function(){
+					if(!$(this).hasClass('cur')){
+						$(this).addClass('cur').siblings().removeClass('cur');
+					}
+				})
+			})
+		</script>
+	</body>
+</html>

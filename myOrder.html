@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>本地快购首页</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    	<meta name="apple-mobile-web-app-capable" content="yes">
+    	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    	<meta name="format-detection" content="telephone=no">
+    	<link rel="stylesheet" href="css/weui/jquery-weui.min.css">
+    	<link rel="stylesheet" href="css/weui/weui.min.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/base.css">
+	</head>
+	<body style="background:#e6e6e6;">
+		<div class="global-layout nav-interval">
+			<!--顶部功能条-->
+			<header>
+				<div class="red-top-bar">
+					<div class="top-bar-nav">
+						<a href="javascript:;" class="backToPrev"></a>
+						<div class="title">我的订单</div>
+					</div>
+				</div>
+			</header>
+			<!--顶部功能条-->
+
+			<div class="orderBar">
+				<ul class="orderBarList">
+					<li class="orderBar-item cur"><span>未完成</span></li>
+					<li class="orderBar-item"><span>已完成</span></li>
+					<li class="orderBar-item"><span>已取消</span></li>
+				</ul>
+			</div>
+
+			<div class="contentBox">
+				<div class="orderBox">
+					<div class="orderBox-item unCompleted" style="display:block">
+						<div class="orderList">
+							<div class="orderItem">
+								<div class="shopMsg">
+									<span class="shopName">员村二横路水果店</span>
+									<span class="right orderStatus">待支付</span>
+								</div>
+								<div class="goodsList">
+									<div class="goodsItem">
+										<div class="goodsImg">
+											<img class="cart-photo-thumb" src="images/goods2.png">
+										</div>
+										<div class="goodsDetail">
+											<p class="goodsName">青苹果</p>
+											<p class="goodsProp">
+												2个，约500克
+											</p>
+											<p class="goodsPriceAndNum">
+												<span class="left">单价:<i>&yen;</i><em class="price">10.00</em></span>
+												<span class="right">数量:<em class="num">1</em></span>
+											</p>
+										</div>
+									</div>
+									<div class="goodsItem">
+										<a class="goodsImg">
+											<img class="cart-photo-thumb" src="images/goods3.png">
+										</a>
+										<div class="goodsDetail">
+											<p class="goodsName">正宗山东黄橘子</p>
+											<p class="goodsProp">
+												2个，约500克
+											</p>
+											<p class="goodsPriceAndNum">
+												<span class="left">单价:<i>&yen;</i><em class="price">5.00</em></span>
+												<span class="right">数量:<em class="num">2</em></span>
+											</p>
+										</div>
+									</div>
+									<div class="goodsTotalBox">
+										<div class="goodsTotalMsg">
+											<div class="right t_price">
+												应付:<i>&yen;</i><span class="totalPrice">20.00</span>
+											</div>
+											<div class="right t_Num">
+												共<span class="num">3</span>件商品
+											</div>
+										</div>
+										<a class="btnItem goToPay redBtn" href="javascript:0;">去支付</a>
+									</div>
+								</div>
+							</div>
+							<div class="orderItem">
+								<div class="shopMsg">
+									<span class="shopName">员村二横路水果店</span>
+									<span class="right orderStatus">待支付</span>
+								</div>
+								<div class="goodsList">
+									<div class="goodsItem">
+										<div class="goodsImg">
+											<img class="cart-photo-thumb" src="images/goods2.png">
+										</div>
+										<div class="goodsDetail">
+											<p class="goodsName">青苹果</p>
+											<p class="goodsProp">
+												2个，约500克
+											</p>
+											<p class="goodsPriceAndNum">
+												<span class="left">单价:<i>&yen;</i><em class="price">10.00</em></span>
+												<span class="right">数量:<em class="num">1</em></span>
+											</p>
+										</div>
+									</div>
+									<div class="goodsItem">
+										<a class="goodsImg">
+											<img class="cart-photo-thumb" src="images/goods3.png">
+										</a>
+										<div class="goodsDetail">
+											<p class="goodsName">正宗山东黄橘子</p>
+											<p class="goodsProp">
+												2个，约500克
+											</p>
+											<p class="goodsPriceAndNum">
+												<span class="left">单价:<i>&yen;</i><em class="price">5.00</em></span>
+												<span class="right">数量:<em class="num">2</em></span>
+											</p>
+										</div>
+									</div>
+									<div class="goodsTotalBox">
+										<div class="goodsTotalMsg">
+											<div class="right t_price">
+												应付:<i>&yen;</i><span class="totalPrice">20.00</span>
+											</div>
+											<div class="right t_Num">
+												共<span class="num">3</span>件商品
+											</div>
+										</div>
+										<a class="btnItem goToPay redBtn" href="javascript:0;">去支付</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="orderBox-item hadCompleted " style="display:none">
+						<div class="orderList">
+							<div class="orderItem">
+								<div class="shopMsg">
+									<span class="shopName">员村二横路水果店</span>
+									<span class="right orderStatus">已完成</span>
+								</div>
+								<div class="goodsList">
+									<div class="goodsItem">
+										<div class="goodsImg">
+											<img class="cart-photo-thumb" src="images/goods2.png">
+										</div>
+										<div class="goodsDetail">
+											<p class="goodsName">青苹果</p>
+											<p class="goodsProp">
+												2个，约500克
+											</p>
+											<p class="goodsPriceAndNum">
+												<span class="left">单价:<i>&yen;</i><em class="price">10.00</em></span>
+												<span class="right">数量:<em class="num">1</em></span>
+											</p>
+										</div>
+									</div>
+									<div class="goodsItem">
+										<a class="goodsImg">
+											<img class="cart-photo-thumb" src="images/goods3.png">
+										</a>
+										<div class="goodsDetail">
+											<p class="goodsName">正宗山东黄橘子</p>
+											<p class="goodsProp">
+												2个，约500克
+											</p>
+											<p class="goodsPriceAndNum">
+												<span class="left">单价:<i>&yen;</i><em class="price">5.00</em></span>
+												<span class="right">数量:<em class="num">2</em></span>
+											</p>
+										</div>
+									</div>
+									<div class="goodsTotalBox">
+										<div class="goodsTotalMsg">
+											<div class="right t_price">
+												应付:<i>&yen;</i><span class="totalPrice">20.00</span>
+											</div>
+											<div class="right t_Num">
+												共<span class="num">3</span>件商品
+											</div>
+										</div>
+										<a class="btnItem goToEvaluate redBtn" href="javascript:0;">去评价</a>
+									</div>
+								</div>
+							</div>
+							<div class="orderItem">
+								<div class="shopMsg">
+									<span class="shopName">员村二横路水果店</span>
+									<span class="right orderStatus">已完成</span>
+								</div>
+								<div class="goodsList">
+									<div class="goodsItem">
+										<div class="goodsImg">
+											<img class="cart-photo-thumb" src="images/goods2.png">
+										</div>
+										<div class="goodsDetail">
+											<p class="goodsName">青苹果</p>
+											<p class="goodsProp">
+												2个，约500克
+											</p>
+											<p class="goodsPriceAndNum">
+												<span class="left">单价:<i>&yen;</i><em class="price">10.00</em></span>
+												<span class="right">数量:<em class="num">1</em></span>
+											</p>
+										</div>
+									</div>
+									<div class="goodsItem">
+										<a class="goodsImg">
+											<img class="cart-photo-thumb" src="images/goods3.png">
+										</a>
+										<div class="goodsDetail">
+											<p class="goodsName">正宗山东黄橘子</p>
+											<p class="goodsProp">
+												2个，约500克
+											</p>
+											<p class="goodsPriceAndNum">
+												<span class="left">单价:<i>&yen;</i><em class="price">5.00</em></span>
+												<span class="right">数量:<em class="num">2</em></span>
+											</p>
+										</div>
+									</div>
+									<div class="goodsTotalBox">
+										<div class="goodsTotalMsg">
+											<div class="right t_price">
+												应付:<i>&yen;</i><span class="totalPrice">20.00</span>
+											</div>
+											<div class="right t_Num">
+												共<span class="num">3</span>件商品
+											</div>
+										</div>
+										<a class="btnItem goToEvaluate redBtn" href="javascript:0;">去评价</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="orderBox-item hadCancel" style="display:none">
+						<div class="orderList">
+							<div class="orderItem">
+								<div class="shopMsg">
+									<span class="shopName">员村二横路水果店</span>
+									<span class="right orderStatus">已取消</span>
+								</div>
+								<div class="goodsList">
+									<div class="goodsItem">
+										<div class="goodsImg">
+											<img class="cart-photo-thumb" src="images/goods2.png">
+										</div>
+										<div class="goodsDetail">
+											<p class="goodsName">青苹果</p>
+											<p class="goodsProp">
+												2个，约500克
+											</p>
+											<p class="goodsPriceAndNum">
+												<span class="left">单价:<i>&yen;</i><em class="price">10.00</em></span>
+												<span class="right">数量:<em class="num">1</em></span>
+											</p>
+										</div>
+									</div>
+									<div class="goodsItem">
+										<a class="goodsImg">
+											<img class="cart-photo-thumb" src="images/goods3.png">
+										</a>
+										<div class="goodsDetail">
+											<p class="goodsName">正宗山东黄橘子</p>
+											<p class="goodsProp">
+												2个，约500克
+											</p>
+											<p class="goodsPriceAndNum">
+												<span class="left">单价:<i>&yen;</i><em class="price">5.00</em></span>
+												<span class="right">数量:<em class="num">2</em></span>
+											</p>
+										</div>
+									</div>
+									<div class="goodsTotalBox">
+										<div class="goodsTotalMsg">
+											<div class="right t_price">
+												应付:<i>&yen;</i><span class="totalPrice">20.00</span>
+											</div>
+											<div class="right t_Num">
+												共<span class="num">3</span>件商品
+											</div>
+										</div>
+										<a class="btnItem delOrder grayBtn" href="javascript:0;">删除订单</a>
+									</div>
+								</div>
+							</div>
+							<div class="orderItem">
+								<div class="shopMsg">
+									<span class="shopName">员村二横路水果店</span>
+									<span class="right orderStatus">已取消</span>
+								</div>
+								<div class="goodsList">
+									<div class="goodsItem">
+										<div class="goodsImg">
+											<img class="cart-photo-thumb" src="images/goods2.png">
+										</div>
+										<div class="goodsDetail">
+											<p class="goodsName">青苹果</p>
+											<p class="goodsProp">
+												2个，约500克
+											</p>
+											<p class="goodsPriceAndNum">
+												<span class="left">单价:<i>&yen;</i><em class="price">10.00</em></span>
+												<span class="right">数量:<em class="num">1</em></span>
+											</p>
+										</div>
+									</div>
+									<div class="goodsItem">
+										<a class="goodsImg">
+											<img class="cart-photo-thumb" src="images/goods3.png">
+										</a>
+										<div class="goodsDetail">
+											<p class="goodsName">正宗山东黄橘子</p>
+											<p class="goodsProp">
+												2个，约500克
+											</p>
+											<p class="goodsPriceAndNum">
+												<span class="left">单价:<i>&yen;</i><em class="price">5.00</em></span>
+												<span class="right">数量:<em class="num">2</em></span>
+											</p>
+										</div>
+									</div>
+									<div class="goodsTotalBox">
+										<div class="goodsTotalMsg">
+											<div class="right t_price">
+												应付:<i>&yen;</i><span class="totalPrice">20.00</span>
+											</div>
+											<div class="right t_Num">
+												共<span class="num">3</span>件商品
+											</div>
+										</div>
+										<a class="btnItem delOrder grayBtn" href="javascript:0;">删除订单</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--底部悬浮导航-->
+			<div class="suspension-footer">
+				<div class="sf-item">
+					<a href="javascript:;" class="sfi-icon-1">主页</a>
+				</div>
+				<div class="sf-item">
+					<a href="javascript:;" class="sfi-icon-2">分类</a>
+				</div>
+				<div class="sf-item">
+					<i class="sfi-num">3</i>
+					<a href="javascript:;" class="sfi-icon-3">购物车</a>
+				</div>
+				<div class="sf-item">
+					<a href="javascript:;" class="sfi-icon-4">订单</a>
+				</div>
+				<div class="sf-item">
+					<a href="javascript:;" class="sfi-icon-5">我的</a>
+				</div>
+			</div>
+			<!--底部悬浮导航-->
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/weui/jquery-weui.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script src="js/interact.js"></script>
+		<script type="text/javascript">
+		$(function(){});
+		$(".orderBarList .orderBar-item").click(function(){
+			if(!$(this).hasClass('cur')){
+				var i = $(this).index();
+				$(this).addClass('cur').siblings().removeClass('cur');
+				$(".orderBox-item").eq(i).show().siblings().hide();
+			}
+		})
+		</script>
+	</body>
+</html>

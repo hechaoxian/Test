@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>评价</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    	<meta name="apple-mobile-web-app-capable" content="yes">
+    	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    	<meta name="format-detection" content="telephone=no">
+    	<link rel="stylesheet" href="css/weui/jquery-weui.min.css">
+    	<link rel="stylesheet" href="css/weui/weui.min.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/base.css">
+	</head>
+	<body style="background:#e6e6e6;">
+		<div class="global-layout nav-interval">
+			<!--顶部功能条-->
+			<header>
+				<div class="red-top-bar">
+					<div class="top-bar-nav">
+						<a href="javascript:;" class="backToPrev"></a>
+						<div class="title">评价</div>
+					</div>
+				</div>
+			</header>
+			<!--顶部功能条-->
+
+			<div class="contentBox">
+				<div class="evaluateBox">
+					<div class="goodsCon">
+						<div class="shop-name">
+							<span>员村三横路零食店</span><i class="rightIco"></i>
+						</div>
+						<div class="good-msg">
+							<a href="#" class="good-img">
+								<img src="images/goods4.png">
+							</a>
+							<div class="good-detail">
+								<p class="good-name">好丽友呀土豆零食</p>
+								<p class="good-prop">1包，约50克，单价&yen;6</p>
+								<p class="good-total">总价:<i>&yen;</i><em>6.00</em></p>
+								<div class="buyTime"><span>2017-03-18</span></div>
+								<div class="buyNum">数量:<span>1</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="evaluateCon">
+						<div class="evaluate-head">
+							<p class="p-txt">商家及店家评价</p>
+							<div class="rightMsg">
+								<span>满意请给五星哦</span>
+							</div>
+						</div>
+						<div class="evaluate-content">
+							<div class="evaluate-item">
+								<span>服务态度</span><span class="eval" id="star1"></span>
+							</div>
+							<div class="evaluate-item">
+								<span>服务质量</span><span class="eval" id="star2"></span>
+							</div>
+							<div class="evaluate-item">
+								<textarea class="evaluate-remark" id="evaluate-remark" placeholder="写下您购买及使用时的真实感受来帮助其他购买的小伙伴吧..."></textarea>
+								<div class="text-num">
+									<span id="num_txt">0</span>/300
+								</div>
+							</div>
+							<div class="evaluate-item">
+								<div class="AnonymousEvaluation">
+									<span class="AEvaluation"><i></i>匿名评价</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="evaluate-btn">
+							<a href="#" id="evaluateBtn" class="grayBtn btnItem">提交</a>
+						</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/weui/jquery-weui.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script src="js/interact.js"></script>
+		<script src="js/jquery.raty.js"></script>
+		<script type="text/javascript">
+		$(function(){
+			$('#evaluate-remark').on('keyup',function(){
+		       var txtval = $('#evaluate-remark').val().length;
+		       console.log(txtval);
+		        if(txtval < 300 ){
+		          $('#num_txt').html(txtval);
+		      }else{
+		          $('#num_txt').html(300);
+		          $('#evaluate-remark').val($('#evaluate-remark').val().substring(0,300));
+		        }
+		    });
+		});
+		$(".orderBarList .orderBar-item").click(function(){
+			if(!$(this).hasClass('cur')){
+				var i = $(this).index();
+				$(this).addClass('cur').siblings().removeClass('cur');
+				$(".orderBox-item").eq(i).show().siblings().hide();
+			}
+		})
+		$(".AEvaluation").click(function(){
+			if(!$(this).hasClass('checked')){
+				$(this).addClass('checked');
+				checkCondition();
+			}else{
+				$(this).removeClass('checked');
+				checkCondition();
+			}
+		})
+		$('#star1,#star2').raty();
+		function checkCondition(){
+			var eval = $(".eval input[name=score]");
+			var flag = $(".AEvaluation").hasClass("checked");
+			eval.each(function(){
+				if($(this).val() == '' || !flag){
+					$("#evaluateBtn").removeClass('greenBtn').addClass('grayBtn');
+				}else{
+					$("#evaluateBtn").removeClass('grayBtn').addClass('greenBtn');
+				}
+			})
+		}
+		</script>
+	</body>
+</html>

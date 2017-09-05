@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>本地快购首页</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    	<meta name="apple-mobile-web-app-capable" content="yes">
+    	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    	<meta name="format-detection" content="telephone=no">
+    	<link rel="stylesheet" href="css/weui/jquery-weui.min.css">
+    	<link rel="stylesheet" href="css/weui/weui.min.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/base.css">
+	</head>
+	<body style="background:#e6e6e6;">
+		<div class="global-layout nav-interval">
+			<!--顶部功能条-->
+			<header>
+				<div class="red-top-bar">
+					<div class="top-bar-nav">
+						<a href="javascript:;" class="backToPrev"></a>
+						<div class="title">订单结算</div>
+					</div>
+				</div>
+			</header>
+			<!--顶部功能条-->
+
+			<div class="contentBox">
+				<div class="payment-con">
+					<div class="payment-item">
+						<div class="sub-item">
+							<p><span  class="consignerMsg">张三（13722222222）</span><i class="remark">默认信息</i></p>
+							<p>
+								收货地址：
+								<span class="addressMsg">广东省广州市天河区员村二横路小小天使花园501</span>
+							</p>
+							<i class="rightIco"></i>
+						</div>
+						<div class="sub-item">
+							<p class="p-txt">送达时间:</p>
+							<div class="rightMsg">
+								<span class="redFont">立即送达</span>
+							</div>
+							<i class="rightIco"></i>
+						</div>
+					</div>
+					<div class="payment-item">
+						<div class="sub-item">
+							<p class="p-txt">支付方式:</p>
+							<div class="rightMsg">
+								<div class="payMethod">
+									<div class="payInWechat payMethod-item checked">
+										<i></i>
+										<span>微信支付</span>
+									</div>
+									<div class="payInGh payMethod-item">
+										<i></i>
+										<span>工行支付</span>
+									</div>
+								</div>
+							</div>
+							<i class="rightIco"></i>
+						</div>
+						<div class="sub-item">
+							<p class="p-txt">发票抬头:</p>
+							<div class="rightMsg">
+								<span>不需要发票</span>
+							</div>
+							<i class="rightIco"></i>
+						</div>
+					</div>
+					<div class="payment-item">
+						<div class="sub-item">
+							<p class="shopMsg">
+								<i class="shopImg">
+									<img src="images/shop1.png">
+								</i>
+								<span class="shopName">良品铺子</span></div>
+						</p>
+						<div class="sub-item">
+							<div class="good-list">
+								<div class="good-item">
+									<div class="good-name item-item">
+										<span>奶香味夏威夷果50克</span>
+									</div>
+									<div class="good-num item-item">
+										x<span>1</span>
+									</div>
+									<div class="good-price item-item">
+										<i>&yen;</i><span>10.00</span>
+									</div>
+								</div>
+								<div class="good-item">
+									<div class="good-name item-item">
+										<span>最新菲律宾美味芒果干45克（小片）</span>
+									</div>
+									<div class="good-num item-item">
+										x<span>1</span>
+									</div>
+									<div class="good-price item-item">
+										<i>&yen;</i><span>10.00</span>
+									</div>
+								</div>
+								<div class="good-item">
+									<div class="good-name item-item">
+										<span>酱香味鸡蛋干158克</span>
+									</div>
+									<div class="good-num item-item">
+										x<span>1</span>
+									</div>
+									<div class="good-price item-item">
+										<i>&yen;</i><span>10.00</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sub-item">
+							<div class="good-statement">
+								<div class="statement-item">
+									<span class="s-txt">商品总价</span>
+									<span class="s-cont">
+										<i>&yen;</i><em class="good-total">40.00</em>
+									</span>
+								</div>
+								<div class="statement-item">
+									<span class="s-txt">配送费</span>
+									<span class="s-cont">
+										<i>&yen;</i><em class="good-freight">5.00</em>
+									</span>
+								</div>
+								<div class="statement-item">
+									<span class="s-txt">优惠</span>
+									<span class="s-cont">
+										<span class="discountMsg">满30减5元</span><i class="discountSign">-&yen;</i><em class="good-discount">5.00</em></span>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="sub-item">
+							<div class="good-statement">
+								<div class="statement-item">
+									<span class="s-cont">
+										<span class="total-num">共<em class="num">4</em>件商品</span>
+										<span class="total-price"><i>&yen;</i><em class="price">30.00</em></span>
+									</span>
+									<div class="remarkMsg">
+										<textarea class="good-remark" placeholder="订单备注（口味、人数等，50字以内）"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="statementBox">
+				<div class="statement">
+					<span class="statement-price">合计:<i>&yen;</i><em>40.00</em></span>
+					<span class="statement-discount">已优惠:<i>&yen;</i><em></em>5.00</span>
+				</div>
+				<div class="statementBtn">
+					<a href="#" class="submitBtn">提交订单</a>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/weui/jquery-weui.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script src="js/interact.js"></script>
+		<script type="text/javascript">
+		$(".payMethod-item").click(function(){
+			if(!$(this).hasClass('checked')){
+				$(this).addClass('checked').siblings().removeClass('checked');
+			}
+		})
+		</script>
+	</body>
+</html>

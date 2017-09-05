@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    	<meta name="apple-mobile-web-app-capable" content="yes">
+    	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    	<meta name="format-detection" content="telephone=no">
+    	<link rel="stylesheet" href="css/weui/jquery-weui.min.css">
+    	<link rel="stylesheet" href="css/weui/weui.min.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/base.css">
+	</head>
+	<body style="background:#e6e6e6;">
+		<div class="global-layout">
+			<!--顶部功能条-->
+			<header>
+				<div class="red-top-bar">
+					<div class="top-bar-nav">
+						<a href="javascript:;" class="backToPrev"></a>
+						<div class="title">订单详情</div>
+					</div>
+				</div>
+			</header>
+			<!--顶部功能条-->
+
+			<div class="contentBox">
+				<div class="payment-con">
+					<div class="payment-item">
+						<div class="sub-item">
+							<p><span class="t-txt">订单号:</span><span class="orderNum">45464654654656</span></p>
+							<div class="rightMsg">
+								<span class="orderStatus">已完成</span>
+							</div>
+						</div>
+					</div>
+					<div class="payment-item">
+						<div class="sub-item">
+							<p><span  class="consignerMsg">张三（13722222222）</span></p>
+							<p>
+								<span class="t-txt">收货地址：</span>
+								<span class="addressMsg">广东省广州市天河区员村二横路小小天使花园501</span>
+							</p>
+						</div>
+					</div>
+					<div class="payment-item">
+						<div class="sub-item">
+							<p class="shopMsg">
+								<i class="shopImg">
+									<img src="images/shop1.png">
+								</i>
+								<span class="shopName">良品铺子</span></div>
+						</p>
+						<div class="sub-item">
+							<div class="goodsList">
+								<div class="goodsItem">
+									<div class="goodsMsg">
+										<div class="goodsImg">
+											<img src="images/goods1.png">
+										</div>
+										<div class="goodsDetail">
+											<p class="goodsName">青苹果</p>
+											<p class="goodsProp">
+												2个，约500克
+											</p>
+										</div>
+									</div>
+									<div class="goodsNum">
+										&times;<span class="num">1</span>
+									</div>
+									<div class="goodsPrice">
+										&yen;<span class="price">10.00</span>
+									</div>
+								</div>
+								<div class="goodsItem">
+									<div class="goodsMsg">
+										<div class="goodsImg">
+											<img src="images/goods1.png">
+										</div>
+										<div class="goodsDetail">
+											<p class="goodsName">青苹果</p>
+											<p class="goodsProp">
+												2个，约500克
+											</p>
+										</div>
+									</div>
+									<div class="goodsNum">
+										&times;<span class="num">1</span>
+									</div>
+									<div class="goodsPrice">
+										&yen;<span class="price">10.00</span>
+									</div>
+								</div>
+								<div class="goodsTotalBox">
+									<div class="goodsTotal">
+										总价:<em>&yen;</em><span class="totalPrice">20.00</span>
+									</div>
+									<div class="goodsDiscount">
+										共优惠
+										<span class="discount">0</span>元
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="payment-item">
+						<div class="sub-item">
+							<p><span class="t-txt">支付方式:</span><span  class="payMethod">微信支付</span></p>
+						</div>
+						<div class="sub-item">
+							<p><span class="t-txt">发票信息:</span><span  class="invoiceMsg">个人明细</span></p>
+						</div>
+						<div class="sub-item">
+							<p><span class="t-txt">下单时间:</span><span  class="buyTime">2017-03-18 16:49</span></p>
+						</div>
+						<div class="sub-item">
+							<p><span class="t-txt">备注:</span><span class="remarkMsg">无</span></p>
+						</div>
+					</div>
+					<div class="operate-item">
+						<div class="btnGroup">
+							<a class="btnItem redWhiteBtn buyAgain" href="javascript:0;">再次购买</a>
+							<a class="btnItem grayBtn applyAfterSale" href="javascript:0;">申请售后</a>
+							<a class="btnItem grayBtn delOrder" href="javascript:0;">删除订单</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/weui/jquery-weui.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script src="js/interact.js"></script>
+		<script type="text/javascript">
+		$(".payMethod-item").click(function(){
+			if(!$(this).hasClass('checked')){
+				$(this).addClass('checked').siblings().removeClass('checked');
+			}
+		})
+		</script>
+	</body>
+</html>
